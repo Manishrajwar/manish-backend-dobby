@@ -14,7 +14,7 @@ const cookieParser = require("cookie-parser");
 app.use(cookieParser());
 
 app.use(cors({
-  origin:["https://master--dobbyfrontend.netlify.app/","http://localhost:3000" ,"http://master--dobbyfrontend.netlify.app/"],
+  origin:["*"],
   credentials:true
 }));
 app.use(express.json());
